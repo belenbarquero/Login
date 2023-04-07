@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="card">
+        <div class="top-row background-top-row">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+
+        </div>
+        <div class="content">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <h1>Inicia Sesión</h1>
+            <p>Usuario</p>
+            <input type="text" class="text" [(ngModel)]="user" #ctrl="ngModel" required />
+            <p>Contraseña</p>
+            <input type="password" class="text" [(ngModel)]="password" #ctrl="ngModel" required />
+            <button class="button" (click)="onLogin()">Iniciar sesión</button>
+        </div>
+        <div class="networks background-top-row">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
